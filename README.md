@@ -263,3 +263,13 @@ git push my-branch
 ```
 git pull
 ```
+
+
+# Забираем изменения из удалённого репозитория
+```
+$ git checkout main # перешли в main
+$ git pull # подтянули новые изменения в main
+$ git checkout my-branch # вернулись в рабочую ветку my-branch
+$ git merge main # влили main в новую ветку my-branch
+$ git push -u origin my-branch # отправили ветку my-branch в удалённый репозиторий
+```
