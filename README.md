@@ -135,9 +135,12 @@ flowchart LR;
 
 1. Файл только что создали. Git ещё не отслеживает его содержимое. Состояние: untracked.
 2. Файл добавили в staging area с помощью git add. Состояние: staged (+ tracked).
+ 
  a. Возможно, изменили файл ещё раз. Состояния: staged, modified (+ tracked).
  Обратите внимание: staged и modified у одного файла, но у разных его версий.  
+ 
  b. Ещё раз выполнили git add. Состояние: staged (+ tracked).
+
 3. Сделали коммит с помощью git commit. Состояние: tracked.
 4. Изменили файл. Состояние: modified (+ tracked).
 5. Снова добавили в staging area с помощью git add. Состояния: staged (+ tracked).
