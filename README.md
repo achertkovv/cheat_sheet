@@ -93,19 +93,19 @@ git clone git@github.com:%ИМЯ_АККАУНТА%/%НАЗВАНИЕ_ПРОЕК�
 
 ```mermaid
 flowchart LR;
-  A("untracked;
-  (неотслеживаемый)") --- B(["git add"]);
-  C("modified;
-  (измененный)") --- D(["git add"]);
-  E("staged;
-  (в списке на коммит);
+  A("untracked
+  (неотслеживаемый)") --- B(["git add"])
+  C("modified
+  (измененный)") --- D(["git add"])
+  E("staged
+  (в списке на коммит)
   + tracked") --- F(["git commit"]);
-  G("tracked;
-  (отслеживаемый)") --- H(["изменение"]);
-  B --> E;
-  D --> E;
-  F --> G;
-  H --> C;
-  E --- J(["изменение"]) --> C;
+  G("tracked
+  (отслеживаемый)") --- H(["изменение"])
+  B --> E
+  D --> E
+  F --> G
+  H --> C
+  E --- J(["изменение"]) --> C
 ```
 
