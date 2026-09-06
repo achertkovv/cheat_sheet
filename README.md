@@ -196,20 +196,24 @@ flowchart LR;
 
 ---
 # Создание веток
+- создать ветку от текущей с названием feature/the-finest-branch:
 ```
-git branch feature/the-finest-branch # создать ветку от текущей с названием feature/the-finest-branch
+git branch feature/the-finest-branch
 ```
+- создать ветку feature/the-finest-branch и сразу переключиться на неё:
 ```
-git checkout -b feature/the-finest-branch # создать ветку feature/the-finest-branch и сразу переключиться на неё
+git checkout -b feature/the-finest-branch
 ```
 
 
 # Навигация по веткам
+- показать, какие есть ветки в репозитории и в какой из них я нахожусь (текущая ветка будет отмечена символом *):
 ```
-git branch # показать, какие есть ветки в репозитории и в какой из них я нахожусь (текущая ветка будет отмечена символом *)
+git branch
 ```
+- показать все известные ветки, как локальные (в локальном репозитории), так и удалённые (в origin на GitHub):
 ```
-git branch -a # показать все известные ветки, как локальные (в локальном репозитории), так и удалённые (в origin на GitHub)
+git branch -a
 ```
 ```
 git checkout feature/br # переключиться на ветку feature/br
@@ -217,20 +221,24 @@ git checkout feature/br # переключиться на ветку feature/br
 
 
 # Сравнение веток
+- показать разницу между веткой main и указателем на HEAD:
 ```
-git diff main HEAD # показать разницу между веткой main и указателем на HEAD
+git diff main HEAD
 ```
+- показать разницу между тем коммитом, который был два коммита назад, и текущим:
 ```
-git diff HEAD~2 HEAD # показать разницу между тем коммитом, который был два коммита назад, и текущим
+git diff HEAD~2 HEAD
 ```
 
 
 # Удаление веток
+- удалить ветку br-name, но только если она является частью main:
 ```
-git branch -d br-name # удалить ветку br-name, но только если она является частью main
+git branch -d br-name
 ```
+- удалить ветку br-name, даже если она не объединена с main:
 ```
-git branch -D br-name # удалить ветку br-name, даже если она не объединена с main
+git branch -D br-name
 ```
 
 
